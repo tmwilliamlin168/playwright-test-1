@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
+    "declaration": true,
+    "noEmit": false,
     "outDir": "dist"
   },
   "extends": "./tsconfig.json",
-  "files": ["src/FancyComponent.tsx"]
+  "files": ["src/FancyComponent.tsx"],
+  "include": []
 }
