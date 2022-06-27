@@ -4,11 +4,26 @@
 2. Use VSCode, make sure the recommended eslint and prettier plugins are installed. Automatic linting should occur when you save!
 3. `npx husky install`. Automatic linting should occur when you commit!
 
+`npx playwright install` might be needed
+
 ## Commands
 
 - `npm start`: Runs the CRA dev server.
-- `npm run build`: Generates the production build.
+- `npm run build`: Generates the production build (export).
+- `npm run build-app`: Generates the production build (App).
 - `npm run serve`: Serves the CRA production build with Python 3.
+
+## Steps
+
+`npm init playwright@latest -- --ct`
+
+Remove `"baseUrl"` in `tsconfig.json` and update the relevant files.
+
+Move `react` to `peerDependencies`.
+
+Add `dist` to `.gitignore` and create `tsconfig-export.json`.
+
+Add `"main"` to `package.json` and update the `build` script.
 
 ## Steps to reproduce template
 
