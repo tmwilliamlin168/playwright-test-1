@@ -12,6 +12,7 @@
 - `npm run build`: Generates the production build (export).
 - `npm run build-app`: Generates the production build (App).
 - `npm run serve`: Serves the CRA production build with Python 3.
+- `npm run test-ct`: Runs the Playwright tests.
 
 ## Steps
 
