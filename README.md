@@ -18,7 +18,7 @@
 
 `npm init playwright@latest -- --ct`
 
-Remove `"baseUrl"` in `tsconfig.json` and update the relevant files.
+Remove `"baseUrl"` in `tsconfig.json` and update the relevant files. (Playwright uses Vite and does not support passing in certain parameters as of 6/28/22).
 
 Move `react` to `peerDependencies`.
 
